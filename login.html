@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Login</title>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- início cabeçalho -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <span class="logo"><a href="login.html"><img src="img/logo.png" width="188.1px"
+                            height="34.35px"></a></span>
+                <div class="modo">
+                    <div class="botao-tema">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- fim cabeçalho -->
+
+    <!-- início login -->
+    <section class="area-login">
+        <div class="formulario">
+            <form action="login-valida.php" method="post">
+                <div class="imagem">
+                    <img src="img/pessoa.png" width="52px" height="52px">
+                </div><br>
+                <h2>Painel administrativo</h2><br><br>
+
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" placeholder="Digite o usuário" autofocus><br>
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Digite a senha" maxlength="20"><br>
+
+                <input type="submit" value="Acessar" name="enviaLogin">
+            </form>
+        </div>
+    </section>
+    <!-- fim login -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

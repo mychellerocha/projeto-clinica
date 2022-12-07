@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.4s ease;
+}
+
+:root {
+    --body-color: #E4E9F7;
+    --nav-color: #4070F4;
+    --text-color: #FFF;
+    --logo-color: #FFF;
+    --label-color: #000;
+    --title-color: #4070F4;
+    --bg-color: #FFF;
+    --input-color: #eee;
+    --button-color: #4070F4;
+    --btdoc-color: #4070F4;
+    --line-color: 1px solid #4070F4;
+    --element-color: #242526;
+    --table-color: #FFF;
+    --box-color: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --h3-color: #242526;
+    --hover-color: #6388ef;
+}
+
+body {
+    height: 100%;
+    background-color: var(--body-color);
+}
+
+.tabela {
+    width: 80%;
+    margin: auto;
+    background-color: var(--table-color);
+    box-shadow: var(--box-color);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+#busca {
+    margin:0 auto !important;
+    padding:0 !important;
+}
+
+#txtbusca {
+    border:0px solid #222 !important;
+    background: #EEE !important;
+    width:220px !important;
+    height:31.99px !important;
+    padding:5px 0 5px 5px !important;
+    margin-right: 15.6% !important;
+    float:right !important;
+    line-height:36px !important;
+    border-radius: 2px !important;
+    box-shadow: var(--box-color);
+}
+
+#btnBusca {
+    background: var(--button-color) !important;
+    position:relative !important;
+    border:0px solid #222 !important;
+    color:#FFF !important; 
+    margin:0 auto !important;
+    padding:10px !important;
+    border:0 none !important;
+    font-size:11px !important;
+    font-weight:bold !important;
+    text-transform:uppercase !important;
+    left: 53% !important;
+    border-radius: 2px !important;
+    box-shadow: var(--box-color);
+}
+#btnBusca:hover {
+    background: var(--hover-color) !important; 
+}
+
+input:focus {
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+}
+
+label {
+    color: var(--label-color);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+nav .navbar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+.navbar .menu-paginas {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu-paginas li {
+    margin: 0 5px;
+    list-style: none;
+}
+
+.menu-paginas li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-paginas li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-paginas li:hover a::before {
+    opacity: 1;
+}
+
+h1 {
+    color: var(--title-color);
+    text-indent: 0.12em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--h3-color);
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: var(--line-color);
+    color: var(--element-color);
+}
+
+.botao {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: var(--btdoc-color);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flutuante {
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0px 4px 2px 0px rgba(98, 98, 98, 0.69);
+}
+
+.flutuante:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.69);
+}
+
+/*início login modo claro*/
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 370px;
+    height: 450px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario input, select {
+    margin-top: 5px;
+    height: 45px;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 9px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    color: var(--label-color);
+    background-color: var(--input-color);
+}
+
+input::placeholder {
+    font-size: 13px;
+}
+
+form [type="submit"] {
+    display: block;
+    background-color: var(--button-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fim login modo claro*/
+
+/* início modo escuro */
+body.dark {
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --text-color: #ccc;
+    --label-color: #FFF;
+    --title-color: #ccc;
+    --bg-color: #18191A;
+    --logo-color: #CCC;
+    --input-color: #242526;
+    --button-color: #000;
+    --btdoc-color: #242526;
+    --line-color: 1px solid #ddd;
+    --element-color: #ccc;
+    --table-color: #000;
+    --box-color: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --h3-color: #ccc;
+    --hover-color: #ccc;
+}
+
+body.dark nav {
+    border: 1px solid #393838;
+}
+
+label.dark {
+    color: var(--label-color);
+}
+
+.formulario.dark input {
+    background-color: var(--input-color);
+    color: var(--label-color);
+}
+
+form.dark {
+    background-color: var(--bg-color);
+}
+
+form [type="submit"].dark {
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.botao-tema i {
+    position: absolute;
+    color: var(--logo-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-tema i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.botao-tema.ativo i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.botao-tema.ativo i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navbar .modo {
+    display: flex;
+    align-items: center;
+}
+
+.modo .botao-tema {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+/* fim modo escuro */
